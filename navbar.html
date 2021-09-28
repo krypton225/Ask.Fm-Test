@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Log in | ASKfm</title>
+    <link rel="shortcut icon" href="images/iconf_letter_A.png" />
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/nav-bar.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gochi+Hand|Patrick+Hand&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Catamaran|Gochi+Hand|Patrick+Hand&display=swap">
+    <script src="js/custom.js"></script>
+</head>
+
+<body>
+
+    <div class="nav-bar text-center">
+        <img src="images/logo-ask-fm.png">
+        <div class="container" id="main" role="main">
+            <ul class="menu">
+                <li>
+                    <a href="#">
+                        <img src="images/navbar/drop-down.png">
+                    </a>
+                    <ul class="submenu">
+                        <li><a href="#">Setting</a></li>
+                        <li><a href="#">Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+            <img class="x-close" src="images/navbar/x-1-512.png"></a>
+        <span>&copy; Ask.fm 2020</span>
+        <div class="photos">
+            <a href="#" title="Home page"><img src="images/navbar/home.png" alt="Home page">
+            </a>
+            <a href="#" title="Questions"><img src="images/navbar/question-mark-1.png" alt="Questions">
+            </a>
+            <a href="#" title="Profile"><img src="images/navbar/profile.png" alt="Profile">
+            </a>
+            <a href="#" title="Friends"><img src="images/navbar/friends.png" alt="Friends">
+            </a>
+            <a href="#" title="Notifications">
+                <img src="images/navbar/notifications.png" alt="Notifications">
+            </a>
+        </div>
+    </div>
+
+    <div id="main">
+        <button class="openbtn" onclick="openNav()">☰</button>
+    </div>
+</body>
+
+</html>

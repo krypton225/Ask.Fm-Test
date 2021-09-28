@@ -1,0 +1,178 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Gochi Hand', cursive;
+    font-family: 'Patrick Hand', cursive;
+}
+
+@font-face {
+    font-family: 'patrick_handregular';
+    src: url('patrickhand-regular-webfont.woff2') format('woff2'), url('patrickhand-regular-webfont.woff') format('woff');
+    font-weight: bold;
+}
+
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgb(51, 38, 38);
+    opacity: 1;
+    /* Firefox */
+}
+
+ :-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: rgb(51, 38, 38);
+}
+
+ ::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: rgb(51, 38, 38);
+}
+
+
+/*========================================= My Classes ===================================*/
+
+.text-center {
+    text-align: center;
+}
+
+
+/*========================================= My Styles ===================================*/
+
+body {
+    height: auto;
+    background: url('../images/earth-background.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.container {
+    width: 350px;
+    height: 610px;
+    display: block;
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    border: 1px solid #ee5253;
+    border-radius: 20px;
+    box-shadow: 2px 2px 22px 1px #ee5253;
+}
+
+.logo-ask {
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.inputs {
+    margin-top: 10px;
+}
+
+input[type=text],
+input[type=password],
+input[type=email],
+input[type=submit] {
+    width: 100%;
+    padding: 5px 8px;
+    margin-top: 20px;
+    display: inline-block;
+    border: 2px solid #ee5253;
+    background-color: black;
+    color: crimson;
+    border-radius: 7px;
+}
+
+input[type=submit] {
+    color: black;
+    background-color: #ee5253;
+    font-weight: bold;
+}
+
+.birth-year,
+.months,
+.days {
+    width: 32%;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    border-color: #ee5253;
+    color: #ee5253;
+    background-color: black;
+}
+
+.birth-year,
+.months,
+.days select option {
+    letter-spacing: 1.5px;
+}
+
+input[type=text]:hover,
+input[type=password]:hover,
+input[type=email]:hover,
+.birth-year:hover,
+.months:hover,
+.days:hover {
+    border-color: #ee5253;
+    box-shadow: 2px 2px 22px 1px #ee5253;
+}
+
+input[type=submit]:hover {
+    background-color: rgb(255, 72, 83);
+    cursor: pointer;
+}
+
+.social-media {
+    height: 100px;
+    width: 100%;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.social-media img {
+    height: 60px;
+    width: 60px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+/*========================================= My Media ===================================*/
+
+@media (max-width: 767px) {
+    .container {
+        margin-top: 5%;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        margin-top: 40px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        margin-top: 40px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        margin-top: 3%;
+    }
+}
+
+
+/*
+@media (max-width: 767px) {}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 992px) {}
+
+@media (min-width: 1200px) {}
+
+*/

@@ -1,0 +1,186 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Gochi Hand', cursive;
+    font-family: 'Patrick Hand', cursive;
+}
+
+@font-face {
+    font-family: 'patrick_handregular';
+    src: url('patrickhand-regular-webfont.woff2') format('woff2'), url('patrickhand-regular-webfont.woff') format('woff');
+    font-weight: bold;
+}
+
+
+/*========================================= My Classes ===================================*/
+
+.text-center {
+    text-align: center;
+}
+
+
+/*========================================= My Styles ===================================*/
+
+body {
+    height: auto;
+    background: url('../images/earth-background.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.container {
+    width: 350px;
+    height: 500px;
+    display: block;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px none crimson;
+}
+
+
+/*This is for logo ASK.FM*/
+
+.logo-ask {
+    margin-top: 100px;
+    cursor: pointer;
+}
+
+
+/*This is for what is under the logo */
+
+.vocal {
+    color: crimson;
+    margin-top: 20px;
+    letter-spacing: 2px;
+    font-weight: bolder;
+}
+
+
+/*===================================================================================================================*/
+
+
+/*========================================= Start Buttons ===================================*/
+
+.btns {
+    font-family: "patrick_handregular";
+}
+
+.btns a {
+    width: 100%;
+    display: block;
+    padding: 10px;
+    margin: 25px;
+    margin-left: 0;
+    margin-top: 25px;
+    background-color: crimson;
+    color: #FFF;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+.btns a :hover {
+    background-color: rgb(255, 96, 128);
+}
+
+
+/*========================================= End Buttons ===================================*/
+
+
+/*========================================= Start Stores Div ===================================*/
+
+.stores {
+    display: inline-block;
+    margin-top: 50px;
+}
+
+.stores a img {
+    width: 149px;
+    height: 50px;
+}
+
+
+/*========================================= End Stores Div ===================================*/
+
+
+/*========================================= Start Footer ===================================*/
+
+footer {
+    width: 100%;
+    background: transparent;
+}
+
+footer .wrapper a {
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+
+footer .wrapper ul li {
+    height: 25px;
+    display: inline-block;
+    list-style: none;
+    color: rgb(255, 34, 78);
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+footer .wrapper ul li:hover {
+    background-color: rgb(255, 34, 78);
+    color: #FFF;
+    border: 1px solid rgb(255, 34, 78);
+    border-radius: 16px;
+}
+
+footer span {
+    margin-top: 100px;
+    color: rgb(255, 34, 78);
+}
+
+
+/*========================================= End Footer ===================================*/
+
+
+/*========================================= My Media ===================================*/
+
+@media (max-width: 767px) {
+    .logo-ask {
+        height: 40px;
+        width: 150px;
+    }
+    .vocal {
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 768px) {
+    .logo-ask {
+        margin-top: 70px;
+        height: 40px;
+        width: 150px;
+    }
+    .vocal {
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 992px) {
+    .logo-ask {
+        margin-top: 50px;
+        height: 50px;
+        width: 190px;
+    }
+    .vocal {
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .logo-ask {
+        margin-top: 50px;
+    }
+}
